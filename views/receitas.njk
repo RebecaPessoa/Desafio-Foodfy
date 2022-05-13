@@ -1,25 +1,14 @@
-<!DOCTYPE html>
+{% extends "layout.html" %}
 
-<head>
-    <title>Foodfy</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
-    <div class="menu">
-        <div id="logo">
-            <a href="/index.html"><img src="/assets/logo.png" alt="logo foodfy"></a>
-        </div>
-        <div class="links">
-            <header>
-                <a href="/sobre.html">Sobre</a>
-                <a href="/receitas.html">Receitas</a>
-            </header>
-        </div>
-    </div>
+{% block head%}
+<title>Foodfy - Receitas</title>
+{% endblock %}
 
-    <section class="cards" id="burguer.png">
-        <div class="card" >
+{% block content %}
+
+    <section class="cards" >
+        <div class="card" id="burguer.png" >
             <!--cada card terá id-->
             <div class="card__image-container">
                 <img src="/assets/burger.png" alt="burger">
@@ -186,13 +175,6 @@
         </div>
 
     </div>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 
-    <div class="footer">
-        <p>Todos os direitos reservados, receitas Foodfy</p>
-    </div>
-
-
-</body>
-
-</html>
+   {% endblock %}
