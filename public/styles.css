@@ -160,8 +160,11 @@ color: #777777;
   }
 
 .recipes-detail {
-    margin: 0;
+    margin: 0 auto;
     font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    max-width: 940px;
   }
   
   .recipes-detail img {
@@ -180,7 +183,6 @@ color: #777777;
     text-align: center;
     color: #111111;
     margin-left: 4px;
-    /* display: inline-flex; */
   }
   
   .recipes-detail h3 {
@@ -203,7 +205,7 @@ color: #777777;
   
   .recipes-detail-content {
     position: relative;
-   
+    text-align: justify;
 
   }
   

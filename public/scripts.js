@@ -11,12 +11,12 @@ for (let i = 0; i < card.length; i++) {
 
 for (let i = 0; i < hide.length; i++) {
   hide[i].addEventListener("click", function() {
-    if (hide[i].textContent == "Esconder") {
-      hide[i].textContent = "Mostrar";
+    if (hide[i].textContent == "ESCONDER") {
+      hide[i].textContent = "MOSTRAR";
       info[i].classList.add("off");
     }
     else {
-      hide[i].textContent = "Esconder";
+      hide[i].textContent = "ESCONDER";
       info[i].classList.remove("off");
     }
   })

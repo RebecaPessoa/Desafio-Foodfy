@@ -14,29 +14,29 @@
             <div class="recipes-detail-content">
                 
               <h2>Ingredientes</h2>
-              <a class="hide">Esconder</a>
+              <a class="hide">ESCONDER</a>
 
               <div class="info">
                 <ul>
-                  {% for list in recipes.ingredients%}
-                    <li>{{list}}</li>
+                  {% for ingredient in recipes.ingredients%}
+                    <li>{{ingredient}}</li>
                   {% endfor %}
                 </ul>
               </div>
 
               <h2>Modo de Preparo</h2>
-              <a class="hide">Esconder</a>
+              <a class="hide">ESCONDER</a>
               
               <div class="info">
               <p>
-                {% for prepare in recipes.preparation %}
-                 {{prepare}}
+                {% for preparation in recipes.preparation %}
+                 {{preparation}}
                 {% endfor %}
               <p>
               </div>
 
               <h2>Informações Adicionais</h2>
-              <a class="hide">Esconder</a>
+              <a class="hide">ESCONDER<a>
               
               <div class="info">
                 <p>{{recipes.information}}</p>

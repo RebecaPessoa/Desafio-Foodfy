@@ -29,10 +29,10 @@ server.get("/recipes", function(req, res){
 })
 
 server.get("/recipes/:index", function(req,res){
-  const recipes = data//array de receitas
+  
   const recipeIndex = req.params.index
   
-  return res.render("details", {recipes:[recipeIndex]})
+  return res.render("details", {recipes:recipes[recipeIndex]})
 
 })
 
